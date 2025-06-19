@@ -1,0 +1,23 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int a,b,c;
+    scanf("%d %d %d",&a,&b,&c);
+    float d=(a*b*c)/100;
+    float e=d+a;
+    
+    float D=0.02*d;
+     float t=(e-D);
+    printf("%.2f\n",d);
+    printf("%.2f\n",e);
+    printf("%.2f\n",D);
+    printf("%.2f",t);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
