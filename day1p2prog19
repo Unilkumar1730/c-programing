@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int l,b;
+    scanf("%d %d",&l,&b);
+    float len = l+l+b+b;
+    float  ben=l*b ;
+    
+    printf("Required length is %.2fm\n",len);
+    printf("Required quantity of carpet is %.2fsqm\n",ben);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
