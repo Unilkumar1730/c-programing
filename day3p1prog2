@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int n, i, value;
+    double product = 1;
+
+    // Read number of elements
+    scanf("%d", &n);
+
+    // Loop to read values and calculate product
+    for (i = 0; i < n; i++) {
+        scanf("%d", &value);
+        product *= value;
+    }
+
+    // Print the result with 2 decimal places
+    printf("The Product of list value is %.2lf\n", product);
+
+    return 0;
+}
