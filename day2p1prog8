@@ -1,0 +1,22 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+int main() {
+    int len,bre,len1,bre1,len2,bre2;
+    scanf("%d %d %d %d %d %d",&len,&bre,&len1,&bre1,&len2,&bre2);
+    int area = len*bre;
+    int area1 =  len1*bre1;
+    int area2 =  len2*bre2;
+    int area3 = area1+area2;
+    if (area>area3)
+    {
+        printf("Raj can fix both painting");
+}
+ else 
+     printf("Raj cannot fix both painting");
+    return 0;
+}
