@@ -4,10 +4,10 @@ int main() {
     int num1, num2;
     char op;
 
-    // Input
+    
     scanf("%d", &num1);
     scanf("%d", &num2);
-    scanf(" %c", &op);  // space before %c to ignore newline
+    scanf(" %c", &op);  
 
     switch(op) {
         case '+':
