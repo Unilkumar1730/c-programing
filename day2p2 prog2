@@ -1,17 +1,20 @@
 #include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
 
 int main() {
     int R, C, T;
     scanf("%d %d %d", &R, &C, &T);
     
-    int second_col_start = (2 - 1) * R + 1;
-    int second_col_end = 2 * R;
+    int seconstart = (2 - 1) * R + 1;
+    int seconend = 2 * R;
 
-    int last_but_one_col_start = (C - 1 - 1) * R + 1;
-    int last_but_one_col_end = (C - 1) * R;
+    int lastonestart = (C - 1 - 1) * R + 1;
+    int lastoneend = (C - 1) * R;
 
-    if ((T >= second_col_start && T <= second_col_end) ||
-        (T >= last_but_one_col_start && T <= last_but_one_col_end)) {
+    if ((T >= secondstart && T <= seconend) ||
+        (T >= laststart && T <= lastoneend)) {
         printf("It is a mango tree\n");
     } else {
         printf("It is not a mango tree\n");
