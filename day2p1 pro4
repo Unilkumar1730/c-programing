@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+  char arr[100];
+    int arrear,mark;
+    scanf("%s",arr);
+       scanf("%d %d",&arrear,&mark );
+    printf("Name of the Student:%s\n",arr);
+           if(arrear<=1 && mark>=70){
+               printf("%s is Eligible for Placement",arr);
+           }
+               else if(arrear<=2 && mark>=75){
+                   printf("%s is Eligible for Placement",arr);
+                   
+               }
+    else{
+        printf("%s is Not Eligible for Placement\n",arr);
+    }
+
+    return 0;
+}
